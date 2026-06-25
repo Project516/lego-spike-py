@@ -42,8 +42,8 @@ async def main():
     #motor_pair.move(motor_pair.PAIR_1, 0, velocity=280, acceleration=100)
     while (True):
         if (getColor(port.B) == "Blue" or getColor(port.B) == "Azure" or getColor(port.B) == "Turquoise"):
-            motor_pair.move(motor_pair.PAIR_1, 0, acceleration=1110)
+            motor_pair.move(motor_pair.PAIR_1, 0)
         else:
-            motor_pair.move(motor_pair.PAIR_1, -100, acceleration=1110)
+            motor_pair.move(motor_pair.PAIR_1, -100)
 
 runloop.run(main())
