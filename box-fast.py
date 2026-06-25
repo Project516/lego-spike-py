@@ -5,8 +5,6 @@ import runloop
 import color_sensor
 import color
 
-#start_time = 0
-
 # color get function
 def getColor(port):
     if color_sensor.color(port) == 0:
@@ -34,32 +32,15 @@ def getColor(port):
     if color_sensor.color(port) == -1:
         return "Unknown"
 
-#def stopClock(on):
-#    time = 0
-#    while(on):
-#        runloop.sleep_ms(1000)
-#        time = time + 1
-
 async def main():
-    # write your code here
-    # await light_matrix.write("Hi!")
 
     motor_pair.pair(motor_pair.PAIR_1, port.C, port.D)
-    #global time
 
     while (True):
         if (getColor(port.B) == "Blue" or getColor(port.B) == "Azure" or getColor(port.B) == "Turquoise"):
 
-            motor_pair.move(motor_pair.PAIR_1, 0)
-
-
+            motor_pair.move(motor_pair.PAIR_1, 0, velocity=1000, acceleration=1000)
         else:
-            #elapsed_time = stopClock(on = 1)
-
-            #if elapsed_time < 5:
             motor_pair.move(motor_pair.PAIR_1, -100, velocity=1000, acceleration=1000)
-            #else:
-            #    motor_pair.move(motor_pair.PAIR_1, 100)
-            #stopClock(on = 0)
 
 runloop.run(main())
