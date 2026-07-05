@@ -1,0 +1,28 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SPIKE MicroPython does not produce these on a PC, but keep them out if you
+# ever run a linter or a local editor side-by-side.
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs from any local tooling
+*.log
