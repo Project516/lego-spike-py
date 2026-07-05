@@ -1,17 +1,17 @@
 # lego-spike-py
 
-A small collection of [LEGO® Education SPIKE™ Prime](https://education.lego.com/en-us/products/lego-education-spike-prime) micropython programs for line-following and color-sensing robots.
+A small collection of LEGO® Education SPIKE™ Prime micropython programs for line-following and color-sensing robots.
 
-The scripts included here were written for the SPIKE Prime hub and use the official [SPIKE MicroPython](https://education.lego.com/en-us/product/mindstorms-introduction-to-micropython) (spike) runtime.
+The scripts included here were written for the SPIKE Prime hub and use the official SPIKE MicroPython (spike) runtime.
 
 ## Requirements
 
 - A **LEGO® Education SPIKE™ Prime** hub (the "brain").
 - Two medium motors driving the wheels, connected to **ports C and D**.
 - One **color sensor** mounted on the robot, connected to **port B**, facing the surface the robot drives on.
-- The SPIKE app (or the [spike-cli](https://github.com/mindboards/ev3dev-micropython) / MicroPython editor) to transfer the `.py` files onto the hub.
+- The SPIKE app to transfer the `.py` files onto the hub.
 
-> The scripts import `hub`, `motor_pair`, `color_sensor`, `color`, and `runloop` — all part of the SPIKE MicroPython runtime. They will **not** run on a standard desktop CPython install.
+> The scripts import `hub`, `motor_pair`, `color_sensor`, `color`, and `runloop` which are all a part of the SPIKE MicroPython runtime. They will **not** run on a standard desktop CPython install.
 
 ## Hardware Setup
 
