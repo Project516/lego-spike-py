@@ -11,7 +11,7 @@ def getColor(port):
     if color_sensor.color(port) == 0:
         return "Black"
     if color_sensor.color(port) == 1:
-        return "Magneta"
+        return "Magenta"
     if color_sensor.color(port) == 2:
         return "Purple"
     if color_sensor.color(port) == 3:
