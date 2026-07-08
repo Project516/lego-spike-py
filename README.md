@@ -69,7 +69,7 @@ Each program's `main()` coroutine is started with `runloop.run(main())`, which i
 
 ## Contributing
 
-This is a small hobby project, but improvements are welcome. Please:
+This is a small hobby project, but improvements are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full guide — in short, please:
 
 - Keep changes small and focused.
 - Test your robot code on real SPIKE hardware before submitting (these programs cannot be run unit-tested on a regular PC).
